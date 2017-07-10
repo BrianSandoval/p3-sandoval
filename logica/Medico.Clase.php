@@ -43,10 +43,10 @@ class Producto extends Conexion {
             throw $exc;
         }
     }
-    
+
     public function idSiguiente() {
         try {
-            $sql = "select count(*) from pedido as id";
+            $sql = "select count(*)as id from pedido ";
             $sentencia = $this->dblink->prepare($sql);
             $sentencia->execute();
             $resultado = $sentencia->fetchAll(PDO::FETCH_ASSOC);
