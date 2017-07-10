@@ -7,9 +7,8 @@ try {
 //    if (validarToken($token)) {
 //    }
 //    
-    $objProducto = new Producto();
-    $resultado = $objProducto->idSiguiente();
-
+    $objProducto = new Cliente();
+    $resultado = $objProducto->listarCliente();
     Funciones::imprimeJSON(200, "", $resultado);
 } catch (Exception $exc) {
     Funciones::imprimeJSON(500, $exc->getMessage(), "Error");
