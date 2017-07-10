@@ -4,9 +4,7 @@ require_once 'json.hpack.php';
 
 class Funciones {
 
-    public static $DIRECCION_WEB_SERVICE = "http://192.168.0.13:8080/finalPrograIII/finalPrograIII/";
-
-    //public static $DIRECCION_WEB_SERVICE = "https://bdp3-sandoval.herokuapp.com/ws/";
+    public static $DIRECCION_WEB_SERVICE = "https://p3-sandoval.herokuapp.com/finalPrograIII/";
 
     public static function mensaje($mensaje, $tipo, $archivoDestino = "", $tiempo = 0) {
         $estiloMensaje = "";
