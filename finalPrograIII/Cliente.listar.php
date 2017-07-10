@@ -1,6 +1,6 @@
 <?php
 
-require_once '../logica/Cliente.Clase.php';
+require_once '../logica/Cliente.clase.php';
 require_once '../util/funciones/Funciones.clase.php';
 //require_once './token.validar.php';
 try {
