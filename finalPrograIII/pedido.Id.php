@@ -9,10 +9,6 @@ try {
 //    
     $objProducto = new Producto();
     $resultado = $objProducto->idSiguiente();
-
-    for ($i = 0; $i < count($resultado); $i++) {
-        $resultado;
-    }
     Funciones::imprimeJSON(200, "", $resultado);
 } catch (Exception $exc) {
     Funciones::imprimeJSON(500, $exc->getMessage(), "Error");
