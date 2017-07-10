@@ -4,9 +4,6 @@ require_once '../logica/Medico.Clase.php';
 require_once '../util/funciones/Funciones.clase.php';
 //require_once './token.validar.php';
 try {
-//    if (validarToken($token)) {
-//    }
-//    
     $objProducto = new Cliente();
     $resultado = $objProducto->listarCliente();
     for ($i = 0; $i < count($resultado); $i++) {
