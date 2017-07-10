@@ -9,6 +9,9 @@ try {
 //    
     $objProducto = new Cliente();
     $resultado = $objProducto->listarCliente();
+    for ($i = 0; $i < count($resultado); $i++) {
+        
+    }
     Funciones::imprimeJSON(200, "", $resultado);
 } catch (Exception $exc) {
     Funciones::imprimeJSON(500, $exc->getMessage(), "Error");
