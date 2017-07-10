@@ -10,7 +10,7 @@ try {
     $objProducto = new Producto();
     $resultado = $objProducto->idSiguiente();
 
-    Funciones::imprimeJSON(200, "", $resultado);
+    echo $resultado;
 } catch (Exception $exc) {
     Funciones::imprimeJSON(500, $exc->getMessage(), "Error");
 }
